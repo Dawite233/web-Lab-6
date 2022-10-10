@@ -1,0 +1,36 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+
+    <style>
+      canvas {
+        border: 1px black solid;
+      }
+
+    </style>
+    <body>
+
+        <canvas id="canvas" height="500" width="500">
+
+        </canvas>
+
+    <script>
+
+      let canvas = document.querySelector("#canvas")
+      let context = canvas.getContext('2d')
+
+
+      canvas.addEventListener('click', function (){
+        let x = event.offsetX
+        let y = event.offsetY
+
+        context.fillRect(x-15, y-15, 30, 30)
+
+      })
+    </script>
+
+    </body>
+    </html>
