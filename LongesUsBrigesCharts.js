@@ -1,5 +1,4 @@
 
-
     let canvas = document.querySelector('#college-map')
     let context = canvas.getContext('2d')
 
@@ -16,8 +15,8 @@
             ],
             datasets: [{
                 label: 'Brige data charts in meters',
-                data: [12, 12, 11, 10, 8],
-                background: ['brown', 'green', 'yellow', '#574242', 'black']
+                data : [18, 14, 20, 16, 8, 11],
+                backgroundColor: ['brown', 'green', 'yellow', '#574242', 'black']
             }]
         },
         options: {

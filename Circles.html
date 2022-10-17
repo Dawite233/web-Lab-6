@@ -30,6 +30,14 @@
 
     canvas.addEventListener('mousedown', function() {
         mousedown = true
+        let x = event.offsetX
+        let y = event.offsetY
+        context.beginPath()
+        context.arc(x-3, y-3, 9, 0, 6.3)
+
+        context.strokeStyle = 'Red'
+        context.lineWidth = 15
+        context.stroke()
     })
 
     canvas.addEventListener('mouseup', function() {
@@ -56,9 +64,10 @@
         //Draw a filled rectangle centered under the mouse click
         //x, y is the top left corner, so shift up and left by 5 to center it under the mouse.
 
+        context.beginPath()
         context.arc(x-3, y-3, 9, 0, 6.3)
-        context.lineWidth = 10
         context.strokeStyle = 'red'
+        context.strokeWidth = 15
         context.stroke()
 
     })
